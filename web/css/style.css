@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 /* ------------- VARIABLES ----------------- */
 :root {
 
@@ -5,38 +6,270 @@
     --color-danger: #ff7782;
     --color-success: #41f1b6;
     --color-warning: #fb5;
-    --color-text: #111;
+    --color-text: #000000;
     --color-background: #f3e5d8;
+    --color-tittle: #7e4333;
+    --color-card: #fff;
+    --color-card-shadow: #797979;
+    
+
+    --color-text-header: #7e4333;
+    --color-text-nav: #edeffd;
+    --color-btn-drk-light: #797979;
+    --color-btn-drk-light-act: #7cbb95;
+    --color-text-footer: #edeffd;
+
+    --card-border-radius: 10px;
+    --img-border-radius: 20px;
+    --border-radius-1: 7px;
+    --border-radius-2: 5px;
 
 }
-
-/* -------------- DARK MODE */
 
 * {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
   }
 
 body {
-    background-color: #f3e5d8;
+    background-color: var(--color-background);
 }
 
-nav{
-    background-color: #255538;
-    margin: 20px 20px;
-    border-radius: 7px;
+h1,h2,
+h3,h4 {
+  color: var(--color-tittle);
+  font-family: "DM Serif Display";
+}
+a,p,ul,li{
+    color: var(--color-text);
+    font-family: "DM Sans";
 }
 
-h1, h2 {
-    color: #7e4333;
+/*---------------------------- HEADER / NAV -------------------- */
+
+header{
+    background-color: var(--color-primary);
+    margin: 1px 3px;
+    height: 70px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: var(--border-radius-1);
 }
 
-footer {
-    background-color: #255538;
-    margin: 0px 20px;
-    border-radius: 7px;
+
+header a, span{
+    color: var(--color-text-nav);
+}
+
+.img-logo{
+    margin-left: 10px;
+    width: 90px;
+    height: 27px;
+    padding: 5px 5px;
+}
+
+.envio-receta{
+    position: absolute;
+    right: 75px;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: var(--img-border-radius);
+}
+
+.theme-toggler {
+    background: var(--color-btn-drk-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+    height: 24px;
+    width: 75px;
+    cursor: pointer;
+    border-radius: var(--border-radius-2);
+}
+
+.theme-toggler span {
+    font-size: 19px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-toggler span.active {
+    background: var(--color-btn-drk-light-act);
+    color: white;
+    border-radius: var(--border-radius-2);
+}
+
+/*---------------------------- MAIN -------------------- */
+
+main{
+    max-width: 1530px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    padding: 0 65px;
 }
 
 .header {
-    background-image: url(../img/fondoCocina.jpg);
+    display: flex;
+    width: 100%;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    position: relative;
+}
+
+.img-head{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.texto-header{
+    position: absolute;
+    left: 60px;
+}
+
+.texto-header h1, .texto-header h2{
+    color: var(--color-text-header);
+}
+
+.recipe-cards{
+    max-width: 100%;  
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:"card1 card2 card3"
+                        "card4 card5 card6"           
+    ;
+    
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.tittle-tendencia{
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+.card{
+    width: 100%;
+    height: 600px;
+    padding: 10px;
+    margin: 0 ;
+    border-radius: var(--card-border-radius);
+    background-color: var(--color-card);
+}
+
+.cont-img-card{
+    width: 100%;
+    height: 300px;
+}
+
+.img-card{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 10px;
+    border-radius: var(--img-border-radius);
+}
+
+.tittle-card{
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.tittle-card h2{
+    font-size: 40px;
+    padding: 5px 15px;
+}
+
+.info-card{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+/*---------------------------- FOOTER -------------------- */
+
+footer {
+    background-color: var(--color-primary);
+    margin: 0px 3px;
+    margin-top: 10px;
+    height: 70px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: var(--border-radius-1);
+}
+
+footer p{
+    margin-right: 20px;
+    color: var(--color-text-footer);
+}
+
+/*---------------------------- MEDIA QUERIES -------------------- */
+
+/* ----- 1100 PX ----- */
+@media (max-width: 1100px){
+
+    main{
+        padding: 10px;
+    }
+
+    .texto-header{
+        position: absolute;
+        left: 30px;
+    }
+    
+    .recipe-cards{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: "card1 card2"
+                            "card3 card4"
+                            "card5 card6";
+    }
+
+}
+
+/* ----- 730 PX ----- */
+@media (max-width: 730px){
+
+    main{
+        padding: 10px;
+    }
+
+    .texto-header{
+        position: absolute;
+        left: 10px;
+    }
+    
+    .recipe-cards{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: "card1"
+                            "card2"
+                            "card3"
+                            "card4"
+                            "card5"
+                            "card6";
+    }
+
 }
