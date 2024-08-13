@@ -3,9 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--MATERIAL ICONS-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
     <title>Huevos Motuleños</title>
+    <link rel="stylesheet" href="../css/detallesStyle.css">
 </head>
 <body>
-    
+    <header>
+        <a href="../index.html">
+          <img class="img-logo" src="../img/logo_bitcook.png" alt="Logo de la pagina Bit Cook" />
+        </a>
+        <a class="envio-receta" href="../views/form.html">Send your Recipe</a>
+        <div class="theme-toggler">
+          <span class="material-symbols-outlined active">light_mode</span>
+          <span class="material-symbols-outlined">dark_mode</span>
+      </div>
+    </header>
+    <main>
+        <div class="contenedor-receta">
+          <div class="cont-img-receta">
+            <img class="img-receta" src="../img/HuevosMotulenos.jpg" alt="Huevos Motuleños">
+          </div>
+          <div class="cont-info-receta">
+            <div class="info-receta">
+              <h1 class="recipe-tittle">Huevos Motuleños</h1>
+              <p class="recipe-desc">Los huevos motuleños son un desayuno o brunch compuesto por una base de tortilla frita (tostada) cubierta con frijoles refritos negros, un huevo frito o estrellado, y una salsa preparada con tomates, jamón en cubos y chícharos. Esta combinación de ingredientes y texturas da lugar a un plato rico y agradable.</p>
+            </div>
+            <div class="cont-tiempo">
+              <div class="info-tiempo">
+                <h3 class="tittle-time">Tiempos de preparación</h3>
+                <ul class="list-time">
+                  <li>Tiempo total: 20 a 25 minutos</li>
+                  <li>Tiempo de cocción: 5 a 7 minutos</li>
+                </ul>
+              </div>
+            </div>
+            <div class="cont-info-prep">
+              <h2 class="tittle-prep">Pasos:</h2>
+              <ol class="list-prep">
+                <li>Sofríe la cebolla con el chile habanero en una sartén con aceite. Cuida que el chile no se reviente y solo esté toreado.</li>
+                <li>Agrega los tomates cortados en cubitos y cocine durante aproximadamente 7 minutos hasta que los tomates hayan liberado todos sus jugos y formado una salsa espesa. Sazona con sal y deja de lado.</li>
+                <li>Caliente el resto del aceite en la sartén y comienza a freír las tortillas una a una. Fríe las tortillas hasta que estén un poco crujientes.</li>
+                <li>En la misma sartén donde freíste las tortillas, comienza a freír los huevos.</li>
+                <li>Coloca dos tortillas fritas en cada plato y unta un par de cucharadas de frijoles refritos sobre ellas. Añade un huevo frito sobre cada tortilla.</li>
+                <li>Baña los huevos con la salsa de jitomate, esparce encima un poco de jamón, chícharos y queso desmoronado.</li>            
+              </ol>
+            </div>
+          </div>
+        </div>
+        <aside class="contenedor-lat">
+          <div class="cont-info-nut">
+            <div class="cont-ingredients">
+              <h2 class="tittle-ingredients">Ingredientes</h2>
+              <ul class="list-ingredients">
+                <li>6 huevos</li>
+                <li>6 tortillas de maíz</li>
+                <li>Aceite vegetal suficiente</li>
+                <li>100 gram cebolla morada picada</li>
+                <li>1 chile habanero</li>
+                <li>300 gram frijoles refritos</li>
+                <li>4 jitomates</li>
+                <li>100 gram chícharos cocidos</li>
+                <li>150 gram queso fresco</li>
+                <li>3 plátanos machos fritos</li>
+                <li>6 rebanadas de jamón picado</li>
+                <li>Sal</li>
+              </ul>
+            </div>
+            <div class="cont-nut">
+              <h2 class="tittle-nut">Valor Nutricional</h2>
+              <table class="tb-nut">
+                <tr>
+                  <td>Calorias</td>
+                  <td>400kcal</td>
+                </tr>
+                <tr>
+                  <td>Carbohidratos</td>
+                  <td>28g</td>
+                </tr>
+                <tr>
+                  <td>Proteinas</td>
+                  <td>30g</td>
+                </tr>
+                <tr>
+                  <td>Grasas</td>
+                  <td>18g</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="cont-more">
+            <h2 class="tittle-more">Otras Recetas</h2>
+            <a href="../views/detalleChampinonesRellenos.html">
+              <div class="recipe-card">
+                <div class="cont-img-card">
+                  <img src="../img/ChampinonesRellenos.jpg" alt="Champiñones Rellenos de Queso" class="img-card">
+                </div>
+                <div class="info-card">
+                  <h3 class="tittle-card">Champiñones Rellenos</h3>
+                  <p class="txt-card">Champiñones horneados rellenos de queso crema.</p>
+                </div>
+              </div>
+            </a>
+            <a href="../views/detalleHotDogsConTocino.html">
+              <div class="recipe-card">
+                <div class="cont-img-card">
+                  <img src="../img/HotDog.jpg" alt="Hot Dogs con Tocino" class="img-card">
+                </div>
+                <div class="info-card">
+                  <h3 class="tittle-card">Hot Dog con Tocino</h3>
+                  <p class="txt-card">Salchichas envueltas en tocino, servidas en pan con queso derretido.</p>
+                </div>
+              </div>
+            </a>
+            <a href="../views/detalleRamenDePolloYVerduras.html">
+              <div class="recipe-card">
+                <div class="cont-img-card">
+                  <img src="../img/RamenDePollo.jpg" alt="Ramen de Pollo" class="img-card">
+                </div>
+                <div class="info-card">
+                  <h3 class="tittle-card">Ramen de Pollo</h3>
+                  <p class="txt-card">Fideos ramen con caldo de pollo, verduras y pollo cocido.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </aside>
+    </main>
+    <footer>
+        <img class="img-logo" src="../img/logo_bitcook.png" alt="" />
+        <p>© 2024 Bogotá Institute of Technology.</p>
+    </footer>
 </body>
 </html>

@@ -1,11 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
+    <!--MATERIAL ICONS-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="../css/formStyle.css">
 </head>
 <body>
-    
+    <header>
+        <a href="../index.html">
+          <img class="img-logo" src="../img/logo_bitcook.png" alt="Logo de la pagina Bit Cook" />
+        </a>
+        <a class="envio-receta" href="../views/form.html">Send your Recipe</a>
+        <div class="theme-toggler">
+          <span class="material-symbols-outlined active">light_mode</span>
+          <span class="material-symbols-outlined">dark_mode</span>
+      </div>
+    </header>
+    <main>
+      <div class="contenedor-form">
+        <div class="info-form">
+          <div class="tittle-form">
+            <h1>Has reconocida tu receta con nosotros !</h1>
+          </div>
+          <div class="txt-form">
+            <p>
+              Tienes una receta interesante que te gustaría compartir o hacerla conocida ? <br>Pues con nosotros puedes hacer que tu arte en la cocina llegue a voca de todos, solo tienes que enviarnos el formulario con la receta y nosotros nos encargaremos del resto.
+            </p>
+          </div>
+        </div>
+        <form>
+          <div>
+            <label for="">Nombre de tu Receta</label>
+            <input type="text" name="nombre-receta" class="cuadro-texto" />
+          </div>
+          <div>
+            <label for="">Tiempo de preparacion</label>
+            <input type="text" name="tiempo-preparacion" class="cuadro-texto" />
+          </div>
+
+          <div>
+            <label for="">Ingredientes</label>
+            <div>
+              <textarea name="ingredientes" class="cuadro-texto"></textarea>
+            </div>
+          </div>
+          <div>
+            <label for="">Instrucciones</label>
+            <div>
+              <textarea name="instrucciones" class="cuadro-texto"></textarea>
+            </div>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+        <div class="footer-con">
+          <img class="img-logo" src="../img/logo_bitcook.png" alt="" />
+          <p>© 2024 Bogotá Institute of Technology.</p>
+        </div>
+    </footer>
 </body>
 </html>

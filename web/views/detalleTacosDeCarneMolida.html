@@ -3,9 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--MATERIAL ICONS-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
     <title>Tacos de Carne Molida</title>
+    <link rel="stylesheet" href="../css/detallesStyle.css">
 </head>
 <body>
-    
+    <header>
+        <a href="../index.html">
+          <img class="img-logo" src="../img/logo_bitcook.png" alt="Logo de la pagina Bit Cook" />
+        </a>
+        <a class="envio-receta" href="../views/form.html">Send your Recipe</a>
+        <div class="theme-toggler">
+          <span class="material-symbols-outlined active">light_mode</span>
+          <span class="material-symbols-outlined">dark_mode</span>
+      </div>
+    </header>
+    <main>
+        <div class="contenedor-receta">
+          <div class="cont-img-receta">
+            <img class="img-receta" src="../img/TacosCarneMolida.jpg" alt="Tacos de carne molida">
+          </div>
+          <div class="cont-info-receta">
+            <div class="info-receta">
+              <h1 class="recipe-tittle">Tacos de Carne Molida</h1>
+              <p class="recipe-desc">Los orígenes de este platillo mexicano se relacionan con el extranjero, más específicamente hablando, en el medio oriente. Surgieron en la década de los 60, cuando hubo una gran migración libanesa a nuestro país. Esta carne es una adaptación del kebab o shawarma, este platillo se prepara con carne de cordero marinada con ajo, jugo de limón, comino, orégano, cardamomo y otras especias típicas de la cultura árabe. A diferencia del platillo oriental, los tacos al pastor se preparan con carne de cerdo o de res marinada con achiote, especias y chiles.</p>
+            </div>
+            <div class="cont-tiempo">
+              <div class="info-tiempo">
+                <h3 class="tittle-time">Tiempos de preparación</h3>
+                <ul class="list-time">
+                  <li>Tiempo total: 30 minutos</li>
+                  <li>Tiempo de cocción: 15 minutos</li>
+                </ul>
+              </div>
+            </div>
+            <div class="cont-info-prep">
+              <h2 class="tittle-prep">Pasos:</h2>
+              <ol class="list-prep">
+                <li>Calienta una sartén a fuego medio-alto y agrega un poco de aceite. Sofríe la cebolla y el ajo hasta que estén transparentes, unos 5 minutos.</li>
+                <li>Añade la carne molida y desmenúzala con una cuchara de madera. Cocina hasta que esté dorada, unos 10 minutos.</li>
+                <li>Agrega la salsa de soya, el orégano, la sal y la pimienta. Mezcla bien y deja que se cocine a fuego bajo durante 5 minutos más, hasta que la salsa se reduzca un poco.</li>
+                <li>Calienta las tortillas en un comal. Rellénalas con la carne molida.</li>
+                <li>A los tacos ponles la lechuga, el tomate, el cilantro, rebanadas de aguacate y el limón al gusto.</li>          
+              </ol>
+            </div>
+          </div>
+        </div>
+        <aside class="contenedor-lat">
+          <div class="cont-info-nut">
+            <div class="cont-ingredients">
+              <h2 class="tittle-ingredients">Ingredientes</h2>
+              <ul class="list-ingredients">
+                <li>500 g de carne molida de res</li>
+                <li>1 cebolla picada</li>
+                <li>2 dientes de ajo picados</li>
+                <li>2 cucharadas de salsa de soya</li>
+                <li>1 cucharadita de orégano seco</li>
+                <li>Sal y pimienta al gusto</li>
+                <li>12 tortillas</li>
+                <li>Lechuga, tomate y cilantro picados</li>
+                <li>1 aguate en rebanadas</li>
+                <li>Limón</li>
+              </ul>
+            </div>
+            <div class="cont-nut">
+              <h2 class="tittle-nut">Valor Nutricional</h2>
+              <table class="tb-nut">
+                <tr>
+                  <td>Calorias</td>
+                  <td>400kcal</td>
+                </tr>
+                <tr>
+                  <td>Carbohidratos</td>
+                  <td>28g</td>
+                </tr>
+                <tr>
+                  <td>Proteinas</td>
+                  <td>30g</td>
+                </tr>
+                <tr>
+                  <td>Grasas</td>
+                  <td>18g</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="cont-more">
+            <h2 class="tittle-more">Otras Recetas</h2>
+            <a href="../views/detalleChampinonesRellenos.html">
+              <div class="recipe-card">
+                <div class="cont-img-card">
+                  <img src="../img/ChampinonesRellenos.jpg" alt="Champiñones Rellenos de Queso" class="img-card">
+                </div>
+                <div class="info-card">
+                  <h3 class="tittle-card">Champiñones Rellenos</h3>
+                  <p class="txt-card">Champiñones horneados rellenos de queso crema.</p>
+                </div>
+              </div>
+            </a>
+            <a href="../views/detalleHotDogsConTocino.html">
+              <div class="recipe-card">
+                <div class="cont-img-card">
+                  <img src="../img/HotDog.jpg" alt="Hot Dogs con Tocino" class="img-card">
+                </div>
+                <div class="info-card">
+                  <h3 class="tittle-card">Hot Dog con Tocino</h3>
+                  <p class="txt-card">Salchichas envueltas en tocino, servidas en pan con queso derretido.</p>
+                </div>
+              </div>
+            </a>
+            <a href="../views/detalleRamenDePolloYVerduras.html">
+              <div class="recipe-card">
+                <div class="cont-img-card">
+                  <img src="../img/RamenDePollo.jpg" alt="Ramen de Pollo" class="img-card">
+                </div>
+                <div class="info-card">
+                  <h3 class="tittle-card">Ramen de Pollo</h3>
+                  <p class="txt-card">Fideos ramen con caldo de pollo, verduras y pollo cocido.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </aside>
+    </main>
+    <footer>
+        <img class="img-logo" src="../img/logo_bitcook.png" alt="" />
+        <p>© 2024 Bogotá Institute of Technology.</p>
+    </footer>
 </body>
 </html>

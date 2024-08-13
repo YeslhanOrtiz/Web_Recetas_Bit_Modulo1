@@ -3,9 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--MATERIAL ICONS-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
     <title>Ramen De Pollo y Verduras</title>
+    <link rel="stylesheet" href="../css/detallesStyle.css">
 </head>
 <body>
-    
+    <header>
+        <a href="../index.html">
+          <img class="img-logo" src="../img/logo_bitcook.png" alt="Logo de la pagina Bit Cook" />
+        </a>
+        <a class="envio-receta" href="../views/form.html">Send your Recipe</a>
+        <div class="theme-toggler">
+          <span class="material-symbols-outlined active">light_mode</span>
+          <span class="material-symbols-outlined">dark_mode</span>
+      </div>
+    </header>
+    <main>
+        <div class="contenedor-receta">
+          <div class="cont-img-receta">
+            <img class="img-receta" src="../img/RamenDePollo.jpg" alt="Ramen de Pollo">
+          </div>
+          <div class="cont-info-receta">
+            <div class="info-receta">
+              <h1 class="recipe-tittle">Ramen de Pollo y Verduras</h1>
+              <p class="recipe-desc">El ramen es una sopa de fideos japonesa que se caracteriza por un caldo muy sabroso. Los fideos se hacen con harina de trigo, agua, sal y kansui, un tipo de agua alcalina que les da su color amarillo y su textura elástica. Sin embargo, hay una versión de pasta instantánea que facilita las recetas.</p>
+            </div>
+            <div class="cont-tiempo">
+              <div class="info-tiempo">
+                <h3 class="tittle-time">Tiempos de preparación</h3>
+                <ul class="list-time">
+                  <li>Tiempo total: 25 a 30 minutos</li>
+                  <li>Tiempo de cocción: 5 a 7 minutos</li>
+                </ul>
+              </div>
+            </div>
+            <div class="cont-info-prep">
+              <h2 class="tittle-prep">Pasos:</h2>
+              <ol class="list-prep">
+                <li>Prepara los fideos del ramen como viene en las instrucciones de la caja, pero no añadas los sobres de condimentos que acompañan la pasta. Reserva.</li>
+                <li>En un sartén pon aceite de oliva y agrega la cebolla y el ajo. Cocina durante unos minutos y añade los champiñones o las setas y el jengibre hasta que los hongos estén tiernos.</li>
+                <li>Cocina un par de huevos.</li>
+                <li>Agregar el agua y el caldo y cocinar por 5 minutos. Después añade al sartén los fideos y el pollo. Sazona y cocina hasta que la proteína esté cocida y todos los ingredientes estén bien integrados.</li>
+                <li>Sirve con huevo y alga nori y disfruta de su ramen.</li>           
+              </ol>
+            </div>
+          </div>
+        </div>
+        <aside class="contenedor-lat">
+          <div class="cont-info-nut">
+            <div class="cont-ingredients">
+              <h2 class="tittle-ingredients">Ingredientes</h2>
+              <ul class="list-ingredients">
+                <li>4 tazas de caldo de pollo</li>
+                <li>6 setas shiitake secas enteras (pueden ser champiñones tradicionales)</li>
+                <li>2 dientes de ajo picados</li>
+                <li>1/2 de cebolla picada</li>
+                <li>2 laminas de jengibre</li>
+                <li>1 cucharada de azucar</li>
+                <li>1 cucharada de aceite de oliva</li>
+                <li>1/2 cucharada de sal</li>
+                <li>1 pechuga de pollo</li>
+                <li>2 huevos</li>
+                <li>1 paquete de fideos ramen</li>
+                <li>1 hoja de alga nori</li>
+              </ul>
+            </div>
+            <div class="cont-nut">
+              <h2 class="tittle-nut">Valor Nutricional</h2>
+              <table class="tb-nut">
+                <tr>
+                  <td>Calorias</td>
+                  <td>400kcal</td>
+                </tr>
+                <tr>
+                  <td>Carbohidratos</td>
+                  <td>28g</td>
+                </tr>
+                <tr>
+                  <td>Proteinas</td>
+                  <td>30g</td>
+                </tr>
+                <tr>
+                  <td>Grasas</td>
+                  <td>18g</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="cont-more">
+            <h2 class="tittle-more">Otras Recetas</h2>
+            <a href="../views/detalleChampinonesRellenos.html">
+              <div class="recipe-card">
+                <div class="cont-img-card">
+                  <img src="../img/ChampinonesRellenos.jpg" alt="Champiñones Rellenos de Queso" class="img-card">
+                </div>
+                <div class="info-card">
+                  <h3 class="tittle-card">Champiñones Rellenos</h3>
+                  <p class="txt-card">Champiñones horneados rellenos de queso crema.</p>
+                </div>
+              </div>
+            </a>
+            <a href="../views/detalleHotDogsConTocino.html">
+              <div class="recipe-card">
+                <div class="cont-img-card">
+                  <img src="../img/HotDog.jpg" alt="Hot Dogs con Tocino" class="img-card">
+                </div>
+                <div class="info-card">
+                  <h3 class="tittle-card">Hot Dog con Tocino</h3>
+                  <p class="txt-card">Salchichas envueltas en tocino, servidas en pan con queso derretido.</p>
+                </div>
+              </div>
+            </a>
+            <a href="../views/detalleSpaguetiRojo.html">
+              <div class="recipe-card">
+                <div class="cont-img-card">
+                  <img src="../img/SpaguetiRojo.jpg" alt="Spagueti Rojo" class="img-card">
+                </div>
+                <div class="info-card">
+                  <h3 class="tittle-card">Espagueti Rojo</h3>
+                  <p class="txt-card">Espagueti con salsa de tomate, cebolla y ajo. Un clásico reconfortante.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </aside>
+    </main>
+    <footer>
+        <img class="img-logo" src="../img/logo_bitcook.png" alt="" />
+        <p>© 2024 Bogotá Institute of Technology.</p>
+    </footer>
 </body>
 </html>

@@ -3,9 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--MATERIAL ICONS-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
     <title>Spagueti Rojo</title>
+    <link rel="stylesheet" href="../css/detallesStyle.css">
 </head>
 <body>
-    
+    <header>
+        <a href="../index.html">
+          <img class="img-logo" src="../img/logo_bitcook.png" alt="Logo de la pagina Bit Cook" />
+        </a>
+        <a class="envio-receta" href="../views/form.html">Send your Recipe</a>
+        <div class="theme-toggler">
+          <span class="material-symbols-outlined active">light_mode</span>
+          <span class="material-symbols-outlined">dark_mode</span>
+      </div>
+    </header>
+    <main>
+        <div class="contenedor-receta">
+          <div class="cont-img-receta">
+            <img class="img-receta" src="../img/SpaguetiRojo.jpg" alt="Espagueti Rojo">
+          </div>
+          <div class="cont-info-receta">
+            <div class="info-receta">
+              <h1 class="recipe-tittle">Espagueti Rojo</h1>
+              <p class="recipe-desc">El espagueti rojo es una de las recetas de pasta más solicitadas que hay porque es muy fácil de hacer con pocos ingredientes y sobre todo es deliciosa. Por eso aquí te dejamos una nueva versión con rico queso para una preparación cremosa.</p>
+            </div>
+            <div class="cont-tiempo">
+              <div class="info-tiempo">
+                <h3 class="tittle-time">Tiempos de preparación</h3>
+                <ul class="list-time">
+                  <li>Tiempo total: 25 a 30 minutos</li>
+                  <li>Tiempo de cocción: 15 minutos</li>
+                </ul>
+              </div>
+            </div>
+            <div class="cont-info-prep">
+              <h2 class="tittle-prep">Pasos:</h2>
+              <ol class="list-prep">
+                <li>Cocina el espagueti en una olla con agua hirviendo, sal, ¼ de cebolla y unas gotitas de limón hasta que esté cocido. Escurre y reserva.</li>
+                <li>Licua los tomates, el otro ¼ de cebolla y un diente de ajo hasta obtener una salsa suave. Calienta el aceite de oliva en una sartén a fuego medio y sofríe el otro diente de ajo picado durante un minuto. Añade la salsa de tomate y sazona con sal y pimienta al gusto.</li>
+                <li>Deja que hierva y reduce el fuego. Cocina durante unos 15 minutos, removiendo de vez en cuando, hasta que espese un poco.</li>
+                <li>Agrega el queso crema a la salsa y mezcla bien hasta que se derrita e integre. Incorpora el espagueti y revuelve para que se impregne de la salsa.</li>
+                <li>Sobre el espagueti rojo agrega el queso mozzarella, tapa el sartén y deja que se cocine durante unos 10 minutos a fuego lento hasta que se derrita el queso. Remueve de vez en cuando.</li>
+                <li>Retira y decora con perejil picado. Sirve caliente</li>            
+              </ol>
+            </div>
+          </div>
+        </div>
+        <aside class="contenedor-lat">
+          <div class="cont-info-nut">
+            <div class="cont-ingredients">
+              <h2 class="tittle-ingredients">Ingredientes</h2>
+              <ul class="list-ingredients">
+                <li>250 g de espagueti</li>
+                <li>4 tomates maduros</li>
+                <li>1/2 de cebolla</li>
+                <li>2 dientes de ajo</li>
+                <li>2 cucharadas de aceite de oliva</li>
+                <li>Sal y pimienta al gusto</li>
+                <li>200 g de queso crema</li>
+                <li>100 g de queso mozzarella rallado</li>
+                <li>Perejil picado para decorar</li>
+              </ul>
+            </div>
+            <div class="cont-nut">
+              <h2 class="tittle-nut">Valor Nutricional</h2>
+              <table class="tb-nut">
+                <tr>
+                  <td>Calorias</td>
+                  <td>400kcal</td>
+                </tr>
+                <tr>
+                  <td>Carbohidratos</td>
+                  <td>28g</td>
+                </tr>
+                <tr>
+                  <td>Proteinas</td>
+                  <td>30g</td>
+                </tr>
+                <tr>
+                  <td>Grasas</td>
+                  <td>18g</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="cont-more">
+            <h2 class="tittle-more">Otras Recetas</h2>
+            <a href="../views/detalleChampinonesRellenos.html">
+              <div class="recipe-card">
+                <div class="cont-img-card">
+                  <img src="../img/ChampinonesRellenos.jpg" alt="Champiñones Rellenos de Queso" class="img-card">
+                </div>
+                <div class="info-card">
+                  <h3 class="tittle-card">Champiñones Rellenos</h3>
+                  <p class="txt-card">Champiñones horneados rellenos de queso crema.</p>
+                </div>
+              </div>
+            </a>
+            <a href="../views/detalleHotDogsConTocino.html">
+              <div class="recipe-card">
+                <div class="cont-img-card">
+                  <img src="../img/HotDog.jpg" alt="Hot Dogs con Tocino" class="img-card">
+                </div>
+                <div class="info-card">
+                  <h3 class="tittle-card">Hot Dog con Tocino</h3>
+                  <p class="txt-card">Salchichas envueltas en tocino, servidas en pan con queso derretido.</p>
+                </div>
+              </div>
+            </a>
+            <a href="../views/detalleRamenDePolloYVerduras.html">
+              <div class="recipe-card">
+                <div class="cont-img-card">
+                  <img src="../img/RamenDePollo.jpg" alt="Ramen de Pollo" class="img-card">
+                </div>
+                <div class="info-card">
+                  <h3 class="tittle-card">Ramen de Pollo</h3>
+                  <p class="txt-card">Fideos ramen con caldo de pollo, verduras y pollo cocido.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </aside>
+    </main>
+    <footer>
+        <img class="img-logo" src="../img/logo_bitcook.png" alt="" />
+        <p>© 2024 Bogotá Institute of Technology.</p>
+    </footer>
 </body>
 </html>
